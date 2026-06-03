@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'CursedTimer';
+    src: url('Fonts/CursedTimer.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'DaysOne';
+    src: url('Fonts/DaysOne.ttf') format('truetype');
+}
+
+.CursedTimer {
+    font-family: 'CursedTimer';
+}
+.DaysOne {
+    font-family: 'DaysOne';
+}
+body {
+    background-color: #FFFFFF;
+    font-family: 'DaysOne', sans-serif;
+    margin: 2rem 2rem;
+    padding: 0;
+    display: flex;
+}
+
+h2{
+    line-height: 00%;
+}
+h3{
+    line-height: 0%;
+}
+h4{
+    line-height: 0%;
+}
+
+
+.scoreboard {
+    border-radius: 1rem;
+    border: 4px solid #FEBF00;
+    width: 700px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+    color: #FFFFFF;
+    background-color: #04053E;
+}
+.clock {
+    font-family: 'CursedTimer', sans-serif;
+    color: #F94F6D;
+    background-color: #080001;
+    font-size: 48px;
+    line-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 16px;
+    
+}
+.scorecard {
+    display: flex;
+    justify-content: space-between;
+    gap: 0rem;
+    align-items: center;
+    width: 100%;
+    padding: 16px 16px;
+}
+
+.btn-newgame {
+    display: block;
+}
+.middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0rem;
+}
