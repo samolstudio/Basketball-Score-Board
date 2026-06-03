@@ -20,29 +20,15 @@ body {
     padding: 0;
     display: flex;
 }
-
-h2{
-    line-height: 00%;
-}
-h3{
-    line-height: 0%;
-}
-h4{
-    line-height: 0%;
-}
-
-
 .scoreboard {
     border-radius: 1rem;
-    border: 4px solid #FEBF00;
-    width: 700px;
-    padding: 16px;
+    border: 0.25rem solid #FEBF00;
+    width: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    justify-content: space-around;
     align-items: center;
-    padding: 2rem;
+    padding: 4rem 4rem; ;
     color: #FFFFFF;
     background-color: #04053E;
 }
@@ -50,26 +36,38 @@ h4{
     font-family: 'CursedTimer', sans-serif;
     color: #F94F6D;
     background-color: #080001;
-    font-size: 48px;
+    font-size: 90px;
+    height: 128px;
+    width: 100%;
     line-height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0px 16px;
+    padding: 0.75rem 2.5rem;
+    border-radius: 0.5rem;
+    margin: 0;
     
+}
+.team-score { 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;   
+    width: 128px;
+    height: 128px;
 }
 .scorecard {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    gap: 0rem;
     align-items: center;
     width: 100%;
-    padding: 16px 16px;
+    margin-top: 2rem;
+    padding: 2rem;
+    border: 0.25rem solid #9AABD8;
+    border-radius: 0.5rem;
 }
 
-.btn-newgame {
-    display: block;
-}
 .middle {
     display: flex;
     flex-direction: column;
@@ -81,7 +79,134 @@ h4{
 .team {
     display: flex;
     flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+    gap: 0rem;
+}
+.button {
+   display: flex;
+    padding: 1rem;
     justify-content: center;
     align-items: center;
-    gap: 0rem;
+    border-radius: 0.5rem;
+    background: #FEBF00;
+    color: #080001;
+    text-align: center;
+    font-family: 'DaysOne';
+    text-decoration: uppercase;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 16px */
+}
+
+.is-secondary {
+    background: #9AABD8;
+    color: #080001;
+   
+}
+.is-small {
+    padding: 0.35rem;
+    font-size: 0.55rem;
+    background: #FFFFFF;
+    color: #080001;
+}
+.btn-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.57rem;
+}
+
+.btn {
+    display: flex;
+    font-family: 'cursedTimer';
+    font-size: 1.25rem;
+    justify-content: space-between;
+    align-items: space-between;
+    border-radius: 0.5rem;
+    background: transparent;
+    color: #9AABD8;
+    border: 0.125rem solid #9AABD8;
+}
+.fscore {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.team {
+     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+      gap: 2rem;
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+   
+   
+}
+
+.small-clock {
+    font-family: 'CursedTimer', sans-serif;
+    color: #F94F6D;
+    background-color: #080001;
+    font-size: 3.125rem;
+    width: 0.5rem;
+    height: 3.125rem;
+    line-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.75rem 2.5rem;
+    border-radius: 0.5rem;
+}
+img {
+    width: 179px;
+    height: 179px;
+}
+
+h2 {
+    font-size: 2.5rem;
+     margin: 0.5rem 0 0.5rem 0;
+}
+.score {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+    gap: 1.5rem;
+    margin: 0;
+}
+h4 {
+    font-size: 1.25rem;
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+.is-point {
+    background: #ffffff;
+    color: #080001;
+}
+.score-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: left;
+    align-items: start;
+    gap: 0.5rem;
+}
+.arrow {
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0.5rem;
+    display: none;
+    
 }
